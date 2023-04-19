@@ -18,16 +18,15 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<!-- Projektas sukonfigruotas spring boot web aplikacijomis -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
+
+
+		<!-- Testavimui ( Junit ) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -38,6 +37,7 @@
 	<build>
 		<plugins>
 			<plugin>
+				<!-- Vykdomajam ( executable jar pagaminti ) -->
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
